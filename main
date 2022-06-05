@@ -17,14 +17,6 @@ TextLabel.TextColor3 = Color3.fromRGB(255, 85, 255)
 TextLabel.TextSize = 20.000
 TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 85, 255)
 
--- Scripts:
-
-local function RWYTVHY_fake_script() -- ScreenGui.Script 
-	local script = Instance.new('Script', ScreenGui)
-
-	game.StarterGui.Respawn.Enabled = true
-end
-coroutine.wrap(RWYTVHY_fake_script)()
 for i,v in next, game.ReplicatedStorage.Weapons:GetChildren() do
 for i,c in next, v:GetChildren() do
 for i,x in next, getconnections(c.Changed) do
